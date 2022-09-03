@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react'
+import Confetti from 'react-confetti'
 import useWindowSize from 'react-use/lib/useWindowSize'
 import { differenceInDays, differenceInSeconds } from 'date-fns'
-
-import Confetti from 'react-confetti'
 
 import * as S from './Main.styled'
 
 export function Main() {
   const [currentDateTime, setCurrentDateTime] = useState(new Date())
-  const [firstDay] = useState(new Date(2020, 2, 7))
+  const [firstDay] = useState(new Date(2020, 1, 7))
   const [seconds, setSeconds] = useState(0)
   const [days, setDays] = useState(0)
 
@@ -28,8 +27,9 @@ export function Main() {
 
   return (
     <S.Container>
-      <Confetti width={width} height={height} />
       <S.Content>
+        <Confetti width={width} height={height} />
+        <span>Você não é um código bem feito, mas dispensa comentários</span>
         <h1>
           <span>Hoje faz </span>
           <strong>{days} dias</strong>
@@ -38,12 +38,12 @@ export function Main() {
         <h2>
           Mais precisamente{' '}
           {Intl.NumberFormat('pt-BR', { style: 'decimal' }).format(seconds)}{' '}
-          segundos de muito amor{' '}
+          segundos
         </h2>
       </S.Content>
       <S.Footer>
         <p>
-          Feito com <span>♥</span> para o meu amozin
+          Feito com <span>💕</span> para o meu amozin e melhor dev desse mundo
         </p>
       </S.Footer>
     </S.Container>

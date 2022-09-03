@@ -6,8 +6,8 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Homepage</title>
-        <link rel='icon' href='/favicon.ico' />
+        <title>Para meu amozin ♥</title>
+        <link rel='icon' href='/icon.svg' />
       </Head>
 
       <>

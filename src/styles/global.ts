@@ -9,10 +9,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: ${theme.colors.black};
+    background: ${theme.colors.white};
     font-family: ${theme.font.family};
     overflow-x: hidden;
-    color: ${theme.colors.white};
+    color: ${theme.colors.black};
   }
 
   button {
