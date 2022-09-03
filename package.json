@@ -18,9 +18,13 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "date-fns": "2.29.2",
+    "framer-motion": "7.2.1",
     "next": "12.2.5",
     "react": "18.2.0",
+    "react-confetti": "6.1.0",
     "react-dom": "18.2.0",
+    "react-use": "17.4.0",
     "styled-components": "5.3.5"
   },
   "devDependencies": {
