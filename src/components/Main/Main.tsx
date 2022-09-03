@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
+import useWindowSize from 'react-use/lib/useWindowSize'
 import { differenceInDays, differenceInSeconds } from 'date-fns'
+
+import Confetti from 'react-confetti'
 
 import * as S from './Main.styled'
 
@@ -8,6 +11,8 @@ export function Main() {
   const [firstDay] = useState(new Date(2020, 2, 7))
   const [seconds, setSeconds] = useState(0)
   const [days, setDays] = useState(0)
+
+  const { width, height } = useWindowSize()
 
   useEffect(() => {
     const id = setInterval(() => setCurrentDateTime(new Date()), 1000)
@@ -23,6 +28,7 @@ export function Main() {
 
   return (
     <S.Container>
+      <Confetti width={width} height={height} />
       <S.Content>
         <h1>
           <span>Hoje faz </span>
