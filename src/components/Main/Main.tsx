@@ -29,7 +29,11 @@ export function Main() {
           <strong>{days} dias</strong>
           <span> que eu conheci a melhor pessoa desse mundo!</span>
         </h1>
-        <h2>Mais precisamente {seconds} segundos de muito amor </h2>
+        <h2>
+          Mais precisamente{' '}
+          {Intl.NumberFormat('pt-BR', { style: 'decimal' }).format(seconds)}{' '}
+          segundos de muito amor{' '}
+        </h2>
       </S.Content>
       <S.Footer>
         <p>
