@@ -27,8 +27,8 @@ export function Main() {
 
   return (
     <S.Container>
+      <Confetti width={width} height={height} />
       <S.Content>
-        <Confetti width={width} height={height} />
         <span>Você não é um código bem feito, mas dispensa comentários</span>
         <h1>
           <span>Hoje faz </span>
