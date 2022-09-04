@@ -35,11 +35,13 @@ export function Main() {
           <strong>{days} dias</strong>
           <span> que eu conheci a melhor pessoa desse mundo!</span>
         </h1>
-        <h2>
+        <span>
           Mais precisamente{' '}
-          {Intl.NumberFormat('pt-BR', { style: 'decimal' }).format(seconds)}{' '}
+          <strong>
+            {Intl.NumberFormat('pt-BR', { style: 'decimal' }).format(seconds)}{' '}
+          </strong>
           segundos
-        </h2>
+        </span>
       </S.Content>
       <S.Footer>
         <p>
